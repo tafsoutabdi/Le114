@@ -1,0 +1,111 @@
+/* Style pour le formulaire */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hwb(29 76% 14%);
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: hwb(29 63% 20% / 0.082);
+    border: 1px solid rgba(142, 107, 82, 0.171);
+    box-shadow: 0 1px 3px hwb(29 18% 58%);
+
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-details {
+    margin-bottom: 20px;
+
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card-box {
+
+    margin-bottom: 15px;
+
+}
+
+.details {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hwb(30 83% 11%);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Affichage du nombre de tables en fonction du choix de l'utilisateur */
+input[type="radio"]#specify-tables:checked~input[type="number"]#table-quantity {
+    display: block;
+}
+
+input[type="radio"]#all-tables:checked~input[type="number"]#table-quantity {
+    display: none;
+}
+
+.button {
+    text-align: center;
+    padding: 15px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(155, 123, 100);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: hwb(29 76% 14%);
+    border: 1px solid rgb(155, 123, 100);
+    color: rgb(155, 123, 100);
+}
+
+.show {
+    display: block !important;
+}
